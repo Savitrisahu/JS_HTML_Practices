@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock Exercise</title>
+    
+</head>
+<body>
+    <div id="time">
+
+    </div>
+    
+    <script>
+        setInterval(() => {
+            let d = new Date()
+            time.innerHTML = d
+        }, 1000);
+
+        // new Date()                  this method shows the accurate tdate and time Ex -          Wed Aug 13 2025 13:21:34 GMT+0530 (India Standard Time)
+// new Date().toString()               this method convert that date into string EX-       'Wed Aug 13 2025 13:21:57 GMT+0530 (India Standard Time)'
+// new Date().toDateString()           this method convert that complex detailed date and time to simple only date, day and time Ex -       'Wed Aug 13 2025'
+// new Date().toTimeString()           this method shows only the accurate time Ex -        '13:22:52 GMT+0530 (India Standard Time)'
+    </script>
+</body>
+</html>

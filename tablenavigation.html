@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table navigation in js</title>
+    <style>
+        table, tr,th,td{
+            border: 1px solid black;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Table of Students</caption>
+        <thead>
+            <th>name</th>
+            <th>age</th>
+            <th>course</th>
+            <th>year</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>savitri</td>
+                <td>20</td>
+                <td>bca</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>radha</td>
+                <td>51</td>
+                <td>bcom</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>dau</td>
+                <td>23</td>
+                <td>mcom</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>mantora</td>
+                <td>17</td>
+                <td>bca</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <script>
+        let t = document.body.firstElementChild;
+        console.log(t.rows);
+        console.log(t);
+        console.log(t.caption);
+        console.log(t.tHead);
+        console.log(t.tFoot);
+        console.log(t.tBody);
+        
+    </script>
+</body>
+</html>

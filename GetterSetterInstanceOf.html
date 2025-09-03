@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getter And Setter in js </title>
+</head>
+<body>
+    
+    <script>
+        class Animal{
+            constructor(name){
+                this._name = name
+            }
+
+            fly(){
+                // alert("i am flying")
+            }
+
+            get name(){                     //getter 
+                return this._name
+            }
+
+            set name(newName){              //setter
+              this._name = newName
+            }
+        }
+        let a = new Animal()
+        name = "Maa"                    //getter and setter used for doing this
+        console.log(name);
+        
+        
+        a.fly()
+
+        // console.log(a instanceof Animal);  // it checks that the given object is belong to the class or not return true, child class also return true 
+        // let num 
+        // console.log(num instanceof Animal);     //return false
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            text-align: center;
+            background-color: cornflowerblue;
+            padding: 20px;
+            line-height: 20px;
+        }
+        h2{
+            margin-top: 20px;
+            text-align: center;
+            background-color: rgb(67, 91, 136);
+            padding: 20px;
+            line-height: 20px;
+        }
+
+        form{
+            background-color: rgba(189 214 223 / 65%);
+            margin: 40px auto;
+            height: 50vh;
+            width: 30vw;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            gap: 10px;
+            padding: 40px;
+        }
+
+        input{
+            height: 30px;
+        }
+
+        
+        #submit{
+            width: 70px;
+            background-color: blue;
+            color: white;
+        }
+        #deletebtn{
+            width: 70px;
+            background-color: blue;
+            color: white;
+        }
+        </style>
+</head>
+<body>
+    <h1>ToDo App </h1>
+    <h2>Enter your tasks for ToDo</h2>
+    <form action="">
+        <label for="title">Enter Task Title</label>
+        <input type="text" id="title">
+
+        <label for="desc">Input task description</label>
+        <input type="text" id="desc">
+       <div class="buttons">
+         <button id="submit">Submit</button>
+        <button id="deletebtn">Delete</button>
+       </div>
+    </form>
+
+    <div id="todo">
+
+    </div>
+    <script>
+        submit.addEventListener("click", (e)=>{
+            e.preventDefault()
+            console.log(e);
+            let titleC = title.value
+            let descC = desc.value
+            localStorage.setItem("todo", JSON.stringify([titleC, descC]))
+            console.log(e); 
+
+             todo.innerHTML = `
+            <h3> ${titleC}</h3>
+            <p>${descC}</p>
+        `
+
+        title.value = " "
+        desc.value = " "
+        })
+
+        deletebtn.addEventListener("click", (e)=>{
+            e.preventDefault()
+            localStorage.removeItem("todo")
+
+             todo.innerHTML = " "
+        })
+
+       
+    </script>
+</body>
+</html>

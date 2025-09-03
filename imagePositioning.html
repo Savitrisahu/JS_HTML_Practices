@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object ift</title>
+    <style>
+        .container {
+            height: 250px;
+            width: 250px;
+            border: 1px solid black;
+
+        }
+
+        .container2 {
+            margin-top: 120px;
+            height: 450px;
+            width: 750px;
+            border: 1px solid black;
+        }
+
+        img {
+            height: 250px;
+            width: 250px;
+            /* object-fit: fill;           default value of object-fit property      */
+            /* object-fit: contain;    this will fit the image in given box with maintainig it's aspect ratio and without cutting the image but can leave spaces in box */
+            /* these all properties will work when object-fit: cover; is placed  */
+            /* object-fit: cover;      this property will fit the image on given height and width in img{} not in the box height and width while keeping it's aspect ratio */
+            /* object-position: top right;     this will only show the portion you mentioned */
+            /* object-position: 20px 30px;         this will create gap between box and image can call padding inside box by given value top right */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="3DoctorsNew.jpeg" alt="">
+    </div>
+    <div class="container2">
+
+    </div>
+</body>
+
+</html>

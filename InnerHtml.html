@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner Html</title>
+</head>
+<body><!-- hello world -->
+    <span id="first" class="sec" hidden>Hey i am span with a <b>bold tag</b> </span>
+    <script>
+        // console.log(document.getElementsByTagName("span")[0]);      console.log() shows the element od Dom tree in our code
+        // console.dir(document.getElementsByTagName("span")[0]);      console.dir() shows the element as an object with it's properties and methods
+        // console.log(document.body.firstChild.nodeName); -> #text     node name can show any node ex- textNode, commentNode and elementNode
+        // console.log(document.body.firstElementChild.tagName);  -> SPAN          tag name only exist for elements not for text and comment node
+        //  console.log(first.innerHTML);           //it shows inner text and html tags in normal font style only works for element nodes.
+        // console.log(sec.innerHTML);               //  it gives error
+    // first.innerHTML = "<i>Hey i am italic</i>"          it will change the inner html with including tags
+    // console.log(first.outerHTML)    this line return whole element <span id="first" class="sec">Hey i am span with a <b>bold tag</b> </span>
+    // first.outerHTML = "<div>now i am become a div </div>"   this will change the whole element with it's tags content everything
+    // document.body.firstChild.data       this line gives the text value of any node including textNode, commentNode and ElementNode  ex- '\n    hello world\n    '
+// document.body.firstChild.nodeValue          this line gives the text value of any node including textNode, commentNode and ElementNode  ex- '\n    hello world\n    '
+
+//   console.log(document.body.textContent);       this will giveyou the whole page text content as a word document
+//   $0.hidden = false         it makes the hidden text appear on page when you put hidden attribute on any element it worked to remove that
+    // first.hidden = false            this will also work     
+        // document.body.firstChild.data = "soniya yo tera sharmana meri jaan na lele"       it will change the content inside comment
+
+        
+    </script>
+</body>
+</html>

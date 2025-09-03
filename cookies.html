@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js browser cookies</title>
+</head>
+<body>
+    Cookies :cookies are small strings of data stored directly in the browser, used to store data 
+    <script>
+        // console.log(document.cookie);        //only work on browser 
+        // console.log(document.cookie);                    
+        // document.cookie = "name=Savitri24"            // this is a method to create and add a cookie, and it not replace all cookies just add another one
+        // document.cookie = "name2=Savitri2005"           // here name and name2 is kind of variables that is must to define and cannot used same name variables
+        // console.log(document.cookie);                    
+        
+        // let key = prompt("Enter your key : ")           // a way to get cookie name and value from user
+        // let value = prompt("Enter your value : ")       // but the key or value anything we give if we add a semicolon the browser store only untill the semicolan
+        // // document.cookie = `${key}=${value}`          // this is call a setcall, and there is limit of chars which is = 4kb, in below given method
+        // document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}`//this is the method to solve that problem, this will encode the value and key into code 
+        // // decodeURI("codeGivenByBrowser")           // by running this method on browser you will get the original normal version of key and value that were user entered
+        // console.log(document.cookie);
+
+        document.cookie = "1=2;3=4"             // this will not set multiple cookies, rather than give options like if 1st one is not set than set the 2nd one, and here is 2 options for setting cookies
+
+        // there is some limits in cookies = 
+        // 1. and there is limit of chars which is = 4kb
+        // 2. yo can not set more than 20 cookies  in a domain, exact numbers are browser dependent 
+        
+        
+    </script>
+</body>
+</html>

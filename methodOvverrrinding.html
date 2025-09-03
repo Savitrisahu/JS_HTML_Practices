@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method oveerriding</title>
+</head>
+<body>
+    method overriding
+    <script>
+class Employee{
+    constructor(name){
+        this.name = name
+        console.log(`${this.name}- constructor is calling`);
+        
+    }
+    login(){
+        console.log("Employee has been logged in");
+    }
+
+    logout(){
+        console.log("Employee has been logged out");
+    }
+
+    getLeaves(leaves){
+        console.log(`employee can get leaves for ${leaves} days`);
+        
+    }
+}
+
+class Programmer extends Employee{
+
+    constructor(name){
+        super()
+        this.name = name
+        console.log(`${this.name} - programmers constructor is calling`);
+        
+    }
+    coffee(x){
+        console.log(`programmer wants ${x} cup of coffees`);
+        
+    }
+    getLeaves(){
+        super.getLeaves(5)
+    }
+}
+
+let gunja = new Employee("mantora")
+gunja.login()
+gunja.logout()
+gunja.getLeaves(5)
+let savitri = new Programmer()
+savitri.login()
+savitri.logout()
+savitri.getLeaves()
+savitri.coffee(10)
+
+console.log(savitri instanceof Employee);       
+
+    </script>
+</body>
+</html>

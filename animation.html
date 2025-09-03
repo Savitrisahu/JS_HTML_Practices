@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animation</title>
+    <style>
+        .container{
+            height: 20vh;
+            width: 50vw;
+            border: 1px solid black;
+            background-color: yellow;
+        }
+        .box{
+            height: 30%;
+            width: 20%;
+            border: 1px solid purple;
+            background-color: white;
+            animation-name: animationVariable;              /*animation name on which the animation will going to be applied*/
+            animation-duration: 2s;                         /*animation duration in how much time the animation will end*/
+            animation-iteration-count: 5;                   /*repeatation time of animation*/
+            animation-direction: alternate-reverse;         /*direction of animation starting*/
+    animation-play-state: running;/*control on animation state can be running and paused if you paused and then running the animation will start from that particular place*/
+            /* animation: name duration timing-function delay iteration-count direction fill-mode;         short hand property for animation */
+}
+        @keyframes animationVariable {                              /*name of a function for applying animation*/
+            from{
+                    background-color: red;
+            }
+            to{
+                transform: translate(100%);                     /*moves the box from it's own box size percentage by given value*/
+                background-color:blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

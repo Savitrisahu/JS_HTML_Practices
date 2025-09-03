@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise API and Promise methods</title>
+</head>
+<body>
+    
+    <script>
+        let p1 = new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                resolve(17)
+            },2000)
+        })
+
+        let p2 = new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+               resolve(20) 
+            },3000)
+        })
+
+        let p3 = new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                resolve(24)
+            },4000)
+        })
+
+        // p1.then((value)=>{console.log(value);})              //you can print the resolved value by this 
+        // p2.then((value)=>{console.log(value);})
+        // p3.then((value)=>{console.log(value);})
+        
+       //let promises = Promise.all([p1,p2,p3])          // this one creates an array of all promises and prints them all in once when all promises resolved, but if any promise rejects the rest promises won't prints     
+       //let promises = Promise.allSettled([p1,p2,p3])          // this one prints all promises no matter that it is resolved or reject
+    //    let promises= Promise.race([p1,p2,p3])                //this one prints the promises who executed fastest among all given promises no matter resolved or rejects
+    // let promises = Promise.any([p1,p2,p3])               // this one prints the first resolved promise among given promises, if all promises rejects it throws an aggrigate error
+    // let promises = Promise.resolve(6) 
+    // promises.then((value)=>{
+        //     console.log(value);
+        //    })
+        
+        // let promises = Promise.reject(new Error("hey i am a new error"))
+
+        
+    </script>
+</body>
+</html>

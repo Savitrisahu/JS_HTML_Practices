@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing html classes through javaScript</title>
+    <style>
+        .yellow{
+            background-color: yellow;
+            color: black;
+        }
+        .red{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="first" class="red yellow">
+        <span>Hey i am good</span>
+    </div>
+    <script>
+        // first.classList = "red"     this is used to change classes dynamically using js 
+        // first.classList         this will give the collection of all classes that were there in your element ex- DOMTokenList(2) ['red', 'yellow', value: 'red yellow']
+        // first.className = "text-color"      this is used to add a class inside Element and remove all the existing classes
+        // first.classList.remove("red")       this is used to remove any class
+        // first.classList.add("red")          this is used to add a class inside an Element
+        // first.classList.toggle("red")           this is used to taggle a class if applioed so remove and remove so applied
+        // first.classList.contains("yellow")      checks if the given class were exist or not in element 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Methods in js</title>
+</head>
+<body>
+    <script>
+        class Animal{
+            constructor(name){
+                this.name = name
+            }
+            walk(){
+                console.log(this.name+ " is walking");
+                
+            }
+            static capitaliz(name){                 // static methods are solely belongs to a class not to any object, and canbe invoked by using className.methodname()
+                return name.charAt(0).toUpperCase()+ name.substr(1, name.length)
+            }
+        }
+
+        let dog = new Animal(Animal.capitaliz("dog"))
+        dog.walk()
+    </script>
+</body>
+</html>

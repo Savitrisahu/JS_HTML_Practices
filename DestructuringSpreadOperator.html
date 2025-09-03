@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring and Spread Operator</title>
+</head>
+<body>
+    destructuring is used to unpack values from an array and properties from an object into distinct variables
+    <script>
+        let arr = [3,9,4,7,12,34]       // we can give here multiple values and it's not assigned to anyone if there is no variable left
+        // let[a,b, ...varName] = arr                  // here we can not give more variables than array values, it produces error 
+        // console.log(a,b, varName);                  //varname  is a variable that used to store rest values from that array
+
+        // let [x, ,z, , ...rest] = arr      // here the place is empty the value of that place from array is not showed
+        // console.log(x,z,rest);          // output - 3 4 (2) [12, 34]
+        
+        
+
+        // let {k,j} = {k : 4, j : 8}
+        // console.log(k,j);
+
+        // let obj = {
+        //     name : "savitri",
+        //     age : 20
+        // }
+
+        // let {n,a} = obj             // this one isn't running
+        // console.log(n,a);
+        
+
+        // let obj = {...arr}              //this is a spread operator which turn an array into an object with key-value pair 0,1,2 indexing ect.
+        // console.log(obj);
+        
+        // let arr = [2,4,6]                    // if we use this array it normally add 3 values
+        // let sum = (v1,v2,v3) =>{            
+        //     return v1+v2+v3
+        // }
+
+        // console.log(sum(...arr));           // if here we use the array with more than 3 values it add first 3 values and leave the rest
+
+        let intro={
+            name : "mantora",
+            age : 17
+        }
+
+        console.log({...intro, name : "gunda"});        // this is mainly used in react and nextJs where time of importing object you want to made changes in object values
+        
+        
+        
+    </script>
+</body>
+</html>

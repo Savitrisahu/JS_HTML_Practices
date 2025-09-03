@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Attributes And Methods</title>
+</head>
+<body>
+    <div id="first" class="hey" data-practice="learning">
+        hey i am a first container
+    </div>
+
+    <script>
+        // console.log(first.getAttribute("class"));       this is used to get the value of an attributes
+        // console.log(first.hasAttribute("style"));   this is used to check if the given attribute in there in element     return true or false 
+        // first.setAttribute("class", "zingle")       this will set the attribuite with the value to the element
+        // first.removeAttribute("zingle")             this will remove the attribute from the element
+        // console.log(first.attributes);          //this will give the nodeList of all attributes present in the element ex- NamedNodeMap {0: id, 1: class, id: id, class: class, length: 2}
+
+            // data-customAttributName = "customAttributesValue"   this is used to create custome attributes for an element write in inside html element
+        // console.log(first.dataset);                 this will return all custorm created attributes list ex- DOMStringMap {practice: 'learning'}
+        // console.log(first.dataset.practice);            this will give the custome created attributes value ex- "learning"
+        
+        
+    </script>
+</body>
+</html>

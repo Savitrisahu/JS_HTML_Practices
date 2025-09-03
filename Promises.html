@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    <p>Promise - a promise is a method that gives the promise of execution of the code inside it wether it is resolve or reject, and it is resolve with a resolev Value</p>
+    <script>
+        // let varName = new Promise((resolve, reject) => {
+            // console.log("i am a new promise");
+            // resolve(24)                                     this is used to resolve a promise 
+            // resolve()                                           this one isn't give any error but not recommended to do 
+        // })
+        // let varName2 = new Promise((resolve, reject) => {
+            // console.log("i am a new promise2 WHO IS GOING TO BE REJECTED");
+            // reject(new Error('I am an error'))                  this is used to reject any promise with a custom error
+            // reject()                                                you can reject a promise without any message too, but not recommended always give an error message
+        // })
+// console.log(varName, varName2);
+
+// let p3 = new Promise((resolve, reject)=>{
+    // resolve(20)
+// })
+// p3.then((value)=>{                                          .then() is used to perform further execution if the promise is resolved, and it also prints the resolved value
+    // console.log(value);
+    // console.log("promise is resolved ");
+// }, (error)=>{                                                    we can give errors like this too
+            // console.log("unknown error occured in p3");
+            
+// })
+
+// let p4 = new Promise((resolve, reject) => {
+    // reject()
+// })
+// p4.catch((error)=>{                                             .catch() is used for error handling and by using error parameter you can throw custom errors
+    // console.log("Some error occured in promise 4");
+    
+// })
+
+// console.log(p3, p4);
+
+
+
+
+
+
+
+        // console.log(varName); this one retuen this - Promise {<fulfilled>: 24}
+        //                                                       [[Prototype]] : Promise
+        //                                                       [[PromiseState]] : "fulfilled"       this can be fullfiled or reject or pending and fullfillment can be done by reject and resolve both means nothing rest to do, work complete.
+        //                                                       [[PromiseResult]] :  24  if resolve then print the value that you give inside resolve(value) and give error is reject.
+        
+        // console.log(Promise);       this one return this    -    Promise() { [native code] }
+        
+        
+        
+        
+    </script>
+</body>
+</html>

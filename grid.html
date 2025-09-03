@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .grid-box{
+            height: 40vh;
+            width: 60vw;
+            border: 1px solid black;
+            display: grid;
+             /* grid-template-columns: 120px 100px ;            this will create two columns with the given value
+             grid-template-rows: 100px 100px 100px;          this will create the rows with given values and the no. of values you write that many rows were created. */
+                /* grid-template-areas: "nav nav nav" "main empty sidebar" "footer footer footer" ; */
+                /* grid-template-columns: 1fr 2fr 1fr ;         this devide the grid box into 3 boxes, in column */
+                /* gap: 20px;                                       used for setting gap */
+                /* justify-items: center;                       for aligning boxes or items vertically center */
+                /* align-items: center;                            for aligning items horizontally center */
+                /* justify-content: center;                        for aligning whole grid in the context of grid container */
+            }
+        /* .box{ */
+            /* margin: 10px;
+            height: 70%;
+            width: 50%; */
+            /* border: 1px solid red; */
+        /* } */
+        /* #th{
+             grid-row: 1/2;                  so if we give same property two different boxes they overlaped.
+             grid-column: 1/2;           this will make the 4th box align between 1 and 2 and take the space from 1 to 2
+        } */
+
+        /* .box{
+            border: 1px solid red;
+        }
+        .b1{
+            grid-area: nav;                         
+            align-self:  start;                          for aligning particular item 
+        }
+        .b2{
+            grid-area: main;
+        }
+        .b3{
+            grid-area:empty;
+        }
+        .b4{
+            grid-area: sidebar;
+        }
+        .b5{
+            grid-area: footer;
+        } */
+    </style>
+</head>
+<body>
+    <div class="grid-box">
+        <div class="box b1">Navigation bar</div>
+        <div class="box b2">main content</div>
+        <div class="box b3">empty</div>
+        <div class="box b4" id="th">sidebar</div>
+        <div class="box b5">footer</div>
+    </div>
+</body>
+</html>

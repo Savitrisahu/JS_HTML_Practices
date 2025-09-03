@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance in js</title>
+</head>
+<body>
+    inheriting classes
+    <script>
+class Animal {
+    constructor(name,color) {
+        this.name = name
+        this.color = color
+    }
+
+    run(){
+        console.log(this.name+" is running");
+    }
+
+    shout(){
+        console.log(this.name+" is shouting");
+        
+    }
+}
+
+class Monkey extends Animal{
+    eatBanana(){
+        console.log(this.name+" is like to eat banana");
+        
+    }
+}
+
+let ani = new Animal("bruno", "white") 
+let m = new Monkey("monkey", "brown")
+m.run()
+m.shout()
+m.eatBanana()
+    </script>
+</body>
+</html>

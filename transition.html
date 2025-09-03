@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .container{
+            width: 50vw;
+            height:40vh ;
+            background-color: aliceblue;
+            border: 1px solid purple;
+        }
+        .box{
+                background-color: red;
+                border: 1px solid black;
+                height: 5vh;
+                width: 6vw;                                  /*transition => means shifting from one state to another state*/
+                /* transition-property:transform;          on which property the transition will be applied, all for all properties */
+                /* transition-duration: 3s ;               how much tiome does a transition will take */
+                /* transition-timing-function:ease-in-out ;    this will define type of transition smooth, fast or combine ect. */
+                /* transition-delay: 1s;                         the delay after how much time the trasition will start. */
+                /* transition: all 3s ease-in-out 1s;              short hand property for transition */
+        }
+        .translate{
+            transform: translateX(10vw) translateY(10vh) scale(2);   /*moves the box from x axise and y axise */
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>

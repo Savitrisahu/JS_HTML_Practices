@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parent child elements accessing in js</title>
+</head>
+<body>
+    <script>
+        // DOM collections are read only you can not make changes in it, they are iterable like array using for of loop
+        // $0.style.color="green"      $0 will point the element in html page which you can refer and perform actions and this will change if you click or hover other elements
+            // $1  -  previous selected element or node in html code
+
+//  console.log(document.body.parentNode);                                  this will return parent node of the element including textNode and commentNodes.
+//  console.log(document.body.previousSibling);                             this will print the previous sibling of the element including textNodes and commetnNodes
+//  console.log(document.head.nextSibling);                                 this will print the next sibling of the element including textNode and commentNodes
+
+// console.log(document.body.parentElement);                                   this will return parent node of the element but only the element nodes
+// console.log(document.head.nextElementSibling);                              this will print the previous sibling of the element but only the element nodes
+// console.log(document.body.previousElementSibling);                            this will print the next sibling of the element but only the element nodes
+
+
+
+ 
+ 
+ 
+ </script>
+</body>
+</html>

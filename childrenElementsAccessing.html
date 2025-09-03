@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>walkingthe dom</title>
+    <!-- <script> -->
+         <!-- console.log(document.body);     this will return null because js tag is written before the body tag -->
+        
+      <!-- </script>  -->
+</head>
+<body>
+    <div>
+        <p>this is me and i am great</p>
+        <span>sibling</span>
+    </div>
+
+    <script>
+        // console.log(document.body.firstChild);              this will print "textNode" because the space is after body is called textNode
+        // console.log(document.body.lastChild);                   print the last node of body which is a script tag
+        // console.log(document.body.childNodes);                  this will print all the nodes present in body as a html collection
+        // console.log(document.body.childNodes[0]);                   this will also print the first child element of body including textNodes, commentNodes, and elementNodes
+        // console.log(document.body.childNodes[document.body.childNodes.length-1]);   this will prints the last node including all type of nodes
+        
+        // console.log(document.body.firstElementChild);               print only the first element child of body not including textNodes and comment Nodes
+        // console.log(document.body.lastElementChild);                    print only the last element child of body not including textNodes and comment Nodes
+
+    //    let arr = Array.from(document.body.childNodes)           this will convert the node list into an array but array methods won't work
+        // console.log(arr);
+        
+        
+    </script>
+</body>
+</html>

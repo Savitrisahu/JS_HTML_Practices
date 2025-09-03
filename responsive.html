@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+    <style>
+        .boxes{
+            height: 30vh;
+            width: 40vw;
+            border: 1px solid black;
+            background-color:azure ;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        h1{
+            text-align: center;
+        }
+        .box{
+            height:10vh;
+            width: 20vw;
+            border: 1px solid purple;
+            background-color: aliceblue;
+        }
+
+        @media only screen and (max-width:500px){
+            /* .boxes{
+                flex-direction: column;
+            } */
+             .box{
+                background-color: red;
+             }
+        }
+    </style>
+</head>
+<body>
+    <h1>responsive css boxes</h1>
+    <div class="boxes">
+        <span class="box"></span>
+        <span class="box"></span>
+        <span class="box"></span>
+        <span class="box"></span>
+        <span class="box"></span>
+        <span class="box"></span>
+        <span class="box"></span>
+        <span class="box"></span>
+        <span class="box"></span>
+        <span class="box"></span>
+    </div>
+</body>
+</html>
